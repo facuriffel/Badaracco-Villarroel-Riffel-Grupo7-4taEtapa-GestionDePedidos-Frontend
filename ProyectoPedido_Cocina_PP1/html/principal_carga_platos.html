@@ -42,7 +42,63 @@
     <section id="contenedorPlatos">
 
     </section>
-    <button id="btnAgregarPlato">Agregar plato</button>
+
+
+
+
+<div class="contenedorCarga" id="admin-main-container">
+    <h2>Catálogo de Platos</h2>
+    
+    <form id="form-plato-catalogo" class="form-gestion">
+        
+        <input type="hidden" id="input-plato-id" value=""> 
+
+        <label for="input-nombre">Nombre del Plato:</label>
+        <input type="text" id="input-nombre" required>
+
+        <label for="input-descripcion">Descripción:</label>
+        <textarea id="input-descripcion" rows="3" required></textarea>
+
+        <label for="input-categoria">Categoría:</label>
+        <select id="input-categoria" required>
+            <option value="">-- Seleccionar --</option>
+            <option value="Principal">Principal</option>
+            <option value="Entrada">Entrada</option>
+            <option value="Postre">Postre</option>
+        </select>
+
+        <label for="input-imagen-url">URL de Imagen:</label>
+        <input type="url" id="input-imagen-url" placeholder="Ej: https://midominio.com/img/plato.jpg" required>
+
+        <button type="submit" id="btn-guardar-plato" class="btn-primary">Guardar Plato en Catálogo</button>
+    </form>
+    
+    <h3>Catálogo Actual</h3>
+    <div id="listado-catalogo-existente" class="listado-gestion">
+        <p>Cargando listado para modificación...</p>
+    </div>
+
+    <hr>
+
+    <h2>Publicar Oferta Diaria</h2>
+    <p>Selecciona la fecha y el/los plato(s) para crear la oferta con stock.</p>
+    
+    <form id="form-oferta-dia" class="form-gestion">
+        <label for="input-fecha-oferta">Fecha de la Oferta:</label>
+        <input type="date" id="input-fecha-oferta" required>
+        
+        <h3>Platos a Incluir (Asigna Stock y Publica):</h3>
+        
+        <div id="platos-catalogo-list" class="listado-oferta">
+            <p>Cargando catálogo...</p>
+        </div>
+        
+        <button type="submit" id="btn-publicar-oferta" class="btn-success">Confirmar y Publicar Oferta</button>
+    </form>
+</div>
+
+
+
   </main>
 
   <!-- Nav principal fijo abajo -->
@@ -68,7 +124,7 @@
     <h3>Todos los derechos reservados</h3>
   </footer>
 
-  <script src="/ProyectoPedido_Cocina_PP1/JavaScript/mainCargaPlatos.js" defer></script>
+  <script src="/ProyectoPedido_Cocina_PP1/JavaScript/mainCargaPlatos.js" type="module" defer></script>
 
 
 </body>

@@ -36,43 +36,35 @@
     <!-- Formulario -->
 
     <div class="containerInfoPersonal">
-      <a href="/ProyectoPedido_Cocina_PP1/html/configuracion.html" class="back-btn">←</a>
-
-      <div class="profile-pic">
-        <img src="https://i.pravatar.cc/100" alt="Foto de perfil" />
-        <label for="file-upload" class="upload-icon">📷</label>
-        <input id="file-upload" type="file" accept="image/*" />
-      </div>
-
-      <form class="form">
+    <form class="form" id="form-perfil"> 
         <div class="form-group">
-          <label>Nombre (s)</label>
-          <input type="text" placeholder="Nombre" />
+            <label>Nombre (s)</label>
+            <input type="text" id="input-nombre" placeholder="Nombre" /> 
+            </div>
+
+        <div class="form-group">
+            <label>Apellido (s)</label>
+            <input type="text" id="input-apellido" placeholder="Apellido" />
         </div>
 
         <div class="form-group">
-          <label>Apellido (s)</label>
-          <input type="text" placeholder="Apellido" />
+            <label>Dirección</label>
+            <input type="text" id="input-direccion" placeholder="Calle/Número/Ciudad" />
         </div>
 
         <div class="form-group">
-          <label>Fecha de nacimiento</label>
-          <input type="text" placeholder="DD/MM/AA" />
-        </div>
-
-        <div class="form-group">
-          <label>Número de teléfono</label>
-          <input type="text" placeholder="343 1234567" />
+            <label>Número de teléfono</label>
+            <input type="text" id="input-telefono" placeholder="343 1234567" />
         </div>
 
         <div class="form-group full-width">
-          <label>E-mail</label>
-          <input type="email" placeholder="ejemplo@gmail.com" />
-        </div>
+            <label>E-mail</label>
+            <input type="email" id="input-email" placeholder="ejemplo@gmail.com" />
+            </div>
 
-        <button type="submit" class="save-btn">Guardar cambios</button>
-      </form>
-    </div>
+        <button type="submit" class="save-btn" id="btn-guardar-perfil">Guardar cambios</button>
+        </form>
+</div>
   </main>
 
   <!-- Nav principal fijo abajo -->
@@ -99,7 +91,7 @@
     <h3>Todos los derechos reservados</h3>
   </footer>
 
-  <script src="/ProyectoPedido_Cocina_PP1/JavaScript/infoPersonal.js"></script>
+  <script src="/ProyectoPedido_Cocina_PP1/JavaScript/infoPersonal.js" type="module"></script>
 </body>
 
 </html>

@@ -38,6 +38,133 @@
   transform: scale(1.1);
 }
 
+
+/* Mensaje general */
+
+.mensaje-general{
+  text-align: center; 
+  margin-top: 15px;
+  font-family: 'Duru Sans', sans-serif;
+}
+
+
+/* -------------------------Carga platos------------------------------ */
+
+.contenedorCarga {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: "Duru Sans", sans-serif;
+}
+
+.contenedorCarga h2 {
+  text-align: center;
+}
+
+.form-gestion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.btn-primary,
+.btn-success {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 1em;
+  color: white;
+  transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.02);
+}
+
+.btn-success:hover {
+  transform: scale(1.02);
+}
+
+.btn-primary {
+  background-color: #4caf50;
+}
+
+.btn-success {
+  background-color: #4caf50;
+}
+
+/* Estilos para los ítems del catálogo en la sección de Oferta Diaria */
+.plato-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.plato-item input[type="number"] {
+  width: 80px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* boton eliminar y editar catalogo */
+
+.btn-eliminar-catalogo,
+.btnEliminarOferta {
+  background-color: rgba(244, 93, 95, 1);
+  border-radius: 100px;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Duru Sans", sans-serif;
+
+  transition: transform 0.2s;
+}
+
+.btn-eliminar-catalogo:hover {
+  transform: scale(1.1);
+}
+
+.btnEliminarOferta:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.btn-editar-catalogo {
+  background-color: rgb(255, 184, 127);
+  border-radius: 100px;
+  border: 0;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+  font-family: "Duru Sans", sans-serif;
+
+  transition: transform 0.2s;
+}
+
+.btn-editar-catalogo:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
 /* ----------------------------------Cards-------------------------------- */
 
 .card {
@@ -180,7 +307,7 @@
 
 /* ---------------------Configuracion------------------ */
 
-.opcionesConfig{
+.opcionesConfig {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -188,8 +315,7 @@
   gap: 15px;
 }
 
-.btnInfoPersonal{
-  
+.btnInfoPersonal {
   background-color: rgba(0, 172, 6, 0.23);
   color: black;
   font-family: "Duru Sans", sans-serif;
@@ -200,7 +326,7 @@
   transition: 0.3s;
 }
 
-.btnInfoPersonal:hover{
+.btnInfoPersonal:hover {
   background-color: rgba(0, 172, 6, 0.39);
   transform: scale(1.1);
 }

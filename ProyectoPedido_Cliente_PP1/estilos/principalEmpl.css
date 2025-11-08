@@ -11,17 +11,119 @@
 }
 
 
+/* ---------------------------Main----------------------------------- */
+
+
+
+
+
+/* -------------------------Registro-------------------------------- */
+
+.registro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;     /* separa del separador */
+  margin-bottom: 80px;  /* separa del footer */
+}
+
+
+#form-registro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 350px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#form-registro label {
+  font-family: 'Duru Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+
+#form-registro input {
+  padding: 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+#form-registro input:focus {
+  border: 1px solid #000;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+
+#form-registro button {
+  padding: 12px;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#form-registro button:hover {
+  background: #000;
+}
+
+
+
+#mensaje-general{
+  text-align: center; 
+  margin-top: 15px;
+  font-family: 'Duru Sans', sans-serif;
+}
+
+.mensaje-general{
+  text-align: center; 
+  margin-top: 15px;
+  font-family: 'Duru Sans', sans-serif;
+}
+
+
+
 /* --------------------------Login----------------------------- */
 
 /* Centrar login en pantalla */
 .login-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 70vh;
-  padding: 20px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
+
+@media (max-width: 450px) {
+  .login-container {
+    padding: 0 20px; /* deja espacio lateral en pantallas chicas */
+  }
+
+  #form-registro {
+    width: 80%;
+    max-width: none; /* permite que se adapte al ancho disponible */
+  }
+
+  }
+
+
+
 
 /* Caja del formulario */
 #loginForm {
@@ -95,6 +197,11 @@
   #loginForm button {
     font-size: 13px;
     padding: 10px;
+  }
+
+  #loginForm{
+    width: 80%;
+    max-width: none; /* permite que se adapte al ancho disponible */
   }
 }
 
@@ -384,6 +491,26 @@
 
 /*-------------- Boton de guardar cambios --------------*/
 
+#btnConfirmarPedido {
+  display: flex;
+  background-color: #28a745;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  color: white;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  font-family: "Patua One", serif;
+  letter-spacing: 1.3px;
+  font-size: large;
+  transition: transform 0.2s;
+}
+
+
 .btnCambios {
   display: flex;
   background-color: #28a745;
@@ -459,6 +586,7 @@ footer {
   height: 200px;
   color: white;
   background-color: rgba(68, 68, 68, 1);
+  font-family: 'Duru Sans', sans-serif;
 }
 
 /* --------------------Active de botones y secciones-------------------- */
