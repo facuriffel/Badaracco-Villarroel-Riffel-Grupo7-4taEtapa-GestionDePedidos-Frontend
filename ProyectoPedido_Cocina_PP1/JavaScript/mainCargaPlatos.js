@@ -6,7 +6,7 @@ import { authenticatedFetch } from './api-helper.js';
 document.addEventListener("DOMContentLoaded", async () => {
     
     // --- 1. CONFIGURACIÓN Y SELECTORES GLOBALES ---
-    const API_BASE_URL = 'http://localhost:8080/api';
+    const API_BASE_URL = 'https://badaracco-villarroel-riffel-grupo7-4taetapa-gest-production.up.railway.app';
     
     const botonDia = document.querySelectorAll(".btnDia");
     const contenedorPlatos = document.getElementById("contenedorPlatos"); 
